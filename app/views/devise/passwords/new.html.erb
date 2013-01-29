@@ -1,0 +1,28 @@
+<%= form_for @user, :url => user_password_path(@user), :html => { :class => "form-session wide" } do |f| %>
+  <h2 class="form-session-heading">Forgot your password?</h2>
+
+  <% if flash[:notice] %>
+    <div class="alert alert-info">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+
+  <% if flash[:error] %>
+    <div class="alert alert-error">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <%= flash[:error] %>
+    </div>
+  <% end %>
+
+  <%= devise_error_messages! %>
+
+  <%= f.email_field :email, :class => "input-block-level", :placeholder => "Email address" %>
+
+  <button class="btn btn-large btn-primary" type="submit">Send password reset instructions</button>
+
+  <div class='shared-links'>
+    <%= render :partial => "devise/shared/links" %>
+  </div>
+<% end %>
+
