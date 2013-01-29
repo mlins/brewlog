@@ -7,6 +7,10 @@ gem 'rails', '3.2.11'
 
 gem 'sqlite3'
 gem 'devise'
+gem 'crack'
+gem 'turbolinks'
+gem 'strong_parameters'
+gem 'ransack'
 
 # Gems used only for assets and not required
 # in production environments by default.

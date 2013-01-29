@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+hops = Crack::XML.parse(
+  File.open(
+    File.join(Rails.root, 'db', 'seeds', 'hops.xml')
+  ).read
+)
+
+hops["HOPS"]["HOP"].each do |hop_xml|
+  hop_attributes = {}
+  hop_xml.each do |k,v|
+    if k == "TYPE"
+      hop_attributes.merge!({"description" => v.strip})
+    else
+      hop_attributes.merge!({k.downcase => v.strip})
+    end
+  end
+
+  hop = Hop.new
+  hop.attributes = hop_attributes.reject{|k,v| !hop.attributes.keys.member?(k.to_s) }
+  hop.save
+end

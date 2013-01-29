@@ -20,6 +20,12 @@ body {
   float: right;
 }
 
+.entity-sidebar .control-label {
+  padding-top: 4px;
+  text-align: center;
+  font-style: italic;
+}
+
 .row-fluid .span9.entity-content {
   margin-left: 0;
 }
