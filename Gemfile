@@ -36,3 +36,9 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+group :development do
+  gem 'hirb'
+  gem 'wirble'
+  gem 'annotate'
+end
