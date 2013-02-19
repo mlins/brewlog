@@ -11,6 +11,7 @@ gem 'crack'
 gem 'turbolinks'
 gem 'strong_parameters'
 gem 'ransack'
+gem 'country-select'
 
 # Gems used only for assets and not required
 # in production environments by default.

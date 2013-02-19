@@ -26,4 +26,21 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   attr_accessible :email, :password, :password_confirmation, :remember_me
+
+  has_many :hops
+
+  after_create :create_hops
+
+  private
+
+  def create_hops
+    Hop.masters.each do |master|
+      hop = hops.build(
+        master.attributes.keep_if do |k,v|
+          !%w(id master user_id).include?(k)
+        end
+      )
+      hop.save
+    end
+  end
 end

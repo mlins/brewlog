@@ -42,6 +42,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.4.0)
+    country-select (1.1.1)
     crack (0.3.2)
     devise (2.1.2)
       bcrypt-ruby (~> 3.0)
@@ -138,6 +139,7 @@ DEPENDENCIES
   annotate
   bootstrap-sass
   coffee-rails (~> 3.2.1)
+  country-select
   crack
   devise
   font-awesome-sass-rails

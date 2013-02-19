@@ -16,5 +16,6 @@ hops["HOPS"]["HOP"].each do |hop_xml|
 
   hop = Hop.new
   hop.attributes = hop_attributes.reject{|k,v| !hop.attributes.keys.member?(k.to_s) }
-  hop.save
+  hop.master = true
+  hop.save!
 end
