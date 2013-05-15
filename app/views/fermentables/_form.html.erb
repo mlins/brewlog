@@ -1,0 +1,67 @@
+<%= form_for @fermentable, :builder => BootstrapFormBuilder do |f| %>
+  <div class="row-fluid">
+    <div class="span3">
+      <fieldset>
+        <legend>General</legend>
+        <div class="row-fluid">
+          <%= f.text_field :name, :class => "span11" %>
+          <%= f.text_field :supplier, :class => "span11" %>
+          <%= f.select :description, Fermentable::DESCRIPTIONS, {}, { class: "span11" } %>
+          <%= f.country_select :origin, ["United States", "United Kingdom", "Germany", "New Zealand", "Australia"], {}, { class: "span11" } %>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span12">
+            <%= f.text_area :notes, class: "input-block-level", rows: 10 %>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div class="span3 offset1">
+      <fieldset>
+        <legend>Properties</legend>
+        <div class="row-fluid">
+          <div class="span6">
+            <%= f.text_field :max_in_batch, :class => "span6", :append => "%" %>
+            <%= f.text_field :diastatic_power, :class => "span6 hidable grain", :append => "°L" %>
+            <%= f.text_field :protein, :class => "span6 hidable grain", :append => "%" %>
+            <%= f.text_field :ibu, :label => "IBU", :class => "span6 hidable extract", :append => "gal/lb" %>
+          </div>
+
+          <div class="span6">
+            <%= f.text_field :color, :class => "span6", :append => "SRM" %>
+            <%= f.text_field :moisture, :class => "span6 hidable grain", :append => "%" %>
+          </div>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span12">
+            <%= f.check_box :recommended_mash, :class => "span12 hidable grain" %>
+            <%= f.check_box :add_after_boil, :class => "span12" %>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div class="span3 offset1">
+      <fieldset>
+        <legend>Yield</legend>
+        <div class="row-fluid">
+          <div class="span6">
+            <%= f.text_field :potential, :class => "span6", :append => "SG" %>
+            <%= f.text_field :coarse_fine_difference, :label => "Coarse/Fine difference", :class => "span6 hidable grain", :append => "%" %>
+          </div>
+
+          <div class="span6">
+            <%= f.text_field :yield, :class => "span6", :append => "%" %>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="form-actions">
+    <% unless @fermentable.new_record? %>
+      <a href="<%= fermentable_path(@fermentable) %>" class="btn btn-danger" data-confirm="Are you sure?" data-method="delete" rel="nofollow"><i class="icon-trash"></i> Delete</a>
+    <% end %>
+    <button type="submit" class="btn btn-primary"><i class="icon-save"></i> Save</button>
+  </div>
+<% end %>

@@ -14,4 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require namespaces
 //= require_tree .
+
+var router = new BrewLog.Router
+router.start()

@@ -1,83 +1,82 @@
 <%= form_for @hop, :builder => BootstrapFormBuilder do |f| %>
-    <div class="row-fluid">
-      <div class="span3">
-        <fieldset>
-          <legend>General</legend>
-          <div class="row-fluid">
-            <%= f.text_field :name, :class => "span11" %>
-            <%= f.country_select :origin, ["United States", "United Kingdom", "Germany", "New Zealand", "Australia"], {}, { class: "span11" } %>
-          </div>
-          <div class="row-fluid">
-            <div class="span6">
-              <%= f.text_field :alpha, class: "span6", append: "%" %>
-              <%= f.text_field :beta, class: "span6", append: "%" %>
-              <%= f.text_field :hsi, class: "span6", append: "%" %>
-            </div>
-
-            <div class="span6">
-              <%= f.select :description, Hop::DESCRIPTIONS, {}, { class: "span8" } %>
-              <%= f.select :form, Hop::FORMS, {}, { class: "span8" } %>
-            </div>
+  <div class="row-fluid">
+    <div class="span3">
+      <fieldset>
+        <legend>General</legend>
+        <div class="row-fluid">
+          <%= f.text_field :name, :class => "span11" %>
+          <%= f.country_select :origin, ["United States", "United Kingdom", "Germany", "New Zealand", "Australia"], {}, { class: "span11" } %>
+        </div>
+        <div class="row-fluid">
+          <div class="span6">
+            <%= f.text_field :alpha, class: "span6", append: "%" %>
+            <%= f.text_field :beta, class: "span6", append: "%" %>
+            <%= f.text_field :hsi, class: "span6", append: "%" %>
           </div>
 
-          <div class="row-fluid">
-            <div class="span12">
-              <%= f.text_area :notes, class: "input-block-level", rows: 10 %>
-            </div>
+          <div class="span6">
+            <%= f.select :description, Hop::DESCRIPTIONS, {}, { class: "span8" } %>
+            <%= f.select :form, Hop::FORMS, {}, { class: "span8" } %>
           </div>
-        </fieldset>
-      </div>
-      <div class="span3 offset1">
-        <fieldset>
-          <legend>Alpha acids</legend>
+        </div>
 
-          <div class="row-fluid">
-            <div class="span6">
-              <%= f.text_field :humulone, class: "span6", append: "%" %>
-              <%= f.text_field :cohumulone, class: "span6", append: "%" %>
-            </div>
-            <div class="span6">
-              <%= f.text_field :adhumulone, class: "span6", append: "%" %>
-            </div>
+        <div class="row-fluid">
+          <div class="span12">
+            <%= f.text_area :notes, class: "input-block-level", rows: 10 %>
           </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>Beta acids</legend>
-
-          <div class="row-fluid">
-            <div class="span6">
-              <%= f.text_field :lupulone, class: "span6", append: "%" %>
-              <%= f.text_field :colupulone, class: "span6", append: "%" %>
-            </div>
-            <div class="span6">
-              <%= f.text_field :adlupulone, class: "span6", append: "%" %>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-      <div class="span3 offset1">
-        <fieldset>
-          <legend>Essential oils</legend>
-
-          <div class="row-fluid">
-            <div class="span6">
-              <%= f.text_field :humulene, class: "span6", append: "%" %>
-              <%= f.text_field :myrcene, class: "span6", append: "%" %>
-            </div>
-            <div class="span6">
-              <%= f.text_field :caryophyllene, class: "span6", append: "%" %>
-              <%= f.text_field :farnese, class: "span6", append: "%" %>
-            </div>
-          </div>
-        </fieldset>
-      </div>
+        </div>
+      </fieldset>
     </div>
-    <div class="form-actions">
-      <% unless @hop.new_record? %>
-        <a href="<%= hop_path(@hop) %>" class="btn btn-danger" data-confirm="Are you sure?" data-method="delete" rel="nofollow"><i class="icon-trash"></i> Delete</a>
-      <% end %>
-      <button type="submit" class="btn btn-primary"><i class="icon-save"></i> Save</button>
+    <div class="span3 offset1">
+      <fieldset>
+        <legend>Alpha acids</legend>
+
+        <div class="row-fluid">
+          <div class="span6">
+            <%= f.text_field :humulone, class: "span6", append: "%" %>
+            <%= f.text_field :cohumulone, class: "span6", append: "%" %>
+          </div>
+          <div class="span6">
+            <%= f.text_field :adhumulone, class: "span6", append: "%" %>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Beta acids</legend>
+
+        <div class="row-fluid">
+          <div class="span6">
+            <%= f.text_field :lupulone, class: "span6", append: "%" %>
+            <%= f.text_field :colupulone, class: "span6", append: "%" %>
+          </div>
+          <div class="span6">
+            <%= f.text_field :adlupulone, class: "span6", append: "%" %>
+          </div>
+        </div>
+      </fieldset>
     </div>
-  </fieldset>
+    <div class="span3 offset1">
+      <fieldset>
+        <legend>Essential oils</legend>
+
+        <div class="row-fluid">
+          <div class="span6">
+            <%= f.text_field :humulene, class: "span6", append: "%" %>
+            <%= f.text_field :myrcene, class: "span6", append: "%" %>
+          </div>
+          <div class="span6">
+            <%= f.text_field :caryophyllene, class: "span6", append: "%" %>
+            <%= f.text_field :farnese, class: "span6", append: "%" %>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="form-actions">
+    <% unless @hop.new_record? %>
+      <a href="<%= hop_path(@hop) %>" class="btn btn-danger" data-confirm="Are you sure?" data-method="delete" rel="nofollow"><i class="icon-trash"></i> Delete</a>
+    <% end %>
+    <button type="submit" class="btn btn-primary"><i class="icon-save"></i> Save</button>
+  </div>
 <% end %>

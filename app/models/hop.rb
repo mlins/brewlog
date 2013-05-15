@@ -47,11 +47,9 @@ class Hop < ActiveRecord::Base
 
   validates_presence_of :user, :unless => :master?
 
-  validates_inclusion_of :master, :in => [true, false]
-
   scope :masters, where(:master => true)
 
   def self.countries
-    Hop.select("DISTINCT(origin)").collect { |h| h.origin }.sort
+    Hop.select("DISTINCT(origin)").where("origin IS NOT NULL").collect { |h| h.origin }.sort
   end
 end

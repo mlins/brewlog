@@ -18,7 +18,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -36,7 +36,7 @@
               <%= nav_link "Recipes", "book", "/recipes" %>
               <%= nav_link "Batches", "inbox", "/batches" %>
               <%= nav_dropdown "Ingredients", "beaker", [
-                ["Fermentables", "/fermentables"],
+                ["Fermentables", fermentables_path],
                 ["Hops", hops_path],
                 ["Yeast", "/yeast"]
               ] %>

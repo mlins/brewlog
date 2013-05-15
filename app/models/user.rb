@@ -28,8 +28,9 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
   has_many :hops
+  has_many :fermentables
 
-  after_create :create_hops
+  after_create :create_hops, :create_fermentables
 
   private
 
@@ -41,6 +42,17 @@ class User < ActiveRecord::Base
         end
       )
       hop.save
+    end
+  end
+
+  def create_fermentables
+    Fermentable.masters.each do |master|
+      fermentable = fermentables.build(
+        master.attributes.keep_if do |k,v|
+          !%w(id master user_id).include?(k)
+        end
+      )
+      fermentable.save
     end
   end
 end

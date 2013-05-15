@@ -36,6 +36,33 @@ class BootstrapFormBuilder < ActionView::Helpers::FormBuilder
     end
   end
 
+  def check_box(name, *args)
+    options    = args.extract_options!
+    has_error  = !object.errors[name].empty?
+    classes    = "control-group"
+    error_html = ""
+
+    if has_error
+      classes += " error"
+      error_html = object.errors[name].collect do |error|
+        content_tag(:span, class: "help-block") do
+          "#{name.to_s.titleize} #{error}"
+        end
+      end.join("").html_safe
+    end
+
+    content_tag(:div, class: classes) do
+      label_class = "checkbox"
+      if options[:class]
+        label_class += (" " + options.delete(:class))
+      end
+      label(name, "", class: label_class) do
+        super(name, options) + (options[:label] || name.to_s.humanize) +
+        error_html
+      end
+    end
+  end
+
   def text_area(name, *args)
     options    = args.extract_options!
     has_error  = !object.errors[name].empty?

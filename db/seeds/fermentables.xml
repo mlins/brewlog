@@ -31,7 +31,7 @@
  <YIELD>95.0000000</YIELD>
  <COLOR>12.5000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Amber colored dry malt extract, for general purpose use.
 Use in any medium to dark colored beer.
@@ -57,7 +57,7 @@ Examples: Ales, Marzens, Amber Ale, India Pale Ale</NOTES>
  <YIELD>78.0000000</YIELD>
  <COLOR>12.5000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Unhopped amber color liquid extract.
 Use as a base malt for any Ale.
@@ -131,7 +131,7 @@ Examples: Amber ale, India Pale Ale, Munich style, Marzen, Bock</NOTES>
  <YIELD>0.0000000</YIELD>
  <COLOR>0.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Hulls are introduced to improve the speed of lautering when making high gravity or high adjunct beers.
 Hulls are neutral in flavor, body and color, and are inert
@@ -157,7 +157,7 @@ Good for wheat beers, Wits, and others that have high protein mashes.</NOTES>
  <YIELD>70.0000000</YIELD>
  <COLOR>1.7000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds significant body to Porters and Stouts.  High haze producing protein prevents use in light beers.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -181,7 +181,7 @@ Good for wheat beers, Wits, and others that have high protein mashes.</NOTES>
  <YIELD>60.9000000</YIELD>
  <COLOR>2.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Raw, unmalted barley can be used to add body to your beer.  Use in homebrew requires very fine milling combined with a decoction or multi-stage mash.  Performs best when used in small quantities with well modified grains.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -205,7 +205,7 @@ Good for wheat beers, Wits, and others that have high protein mashes.</NOTES>
  <YIELD>79.0000000</YIELD>
  <COLOR>1.7000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Raw barley that has been &#34;popped&#34; open to open kernels
 Used in place of raw barley for faster conversion and higher yields.
@@ -231,7 +231,7 @@ High in haze producing protein</NOTES>
  <YIELD>79.0000000</YIELD>
  <COLOR>23.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>Belgian</ORIGIN>
+ <ORIGIN>Belgium</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Use for English ales, brown ales and porters.
 Adds a biscuit like flavor and aroma.
@@ -257,7 +257,7 @@ Can be used as a substitute for toasted malt.</NOTES>
  <YIELD>55.0000000</YIELD>
  <COLOR>500.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Dark color and dry roasted flavor characteristic of Stouts and Porters
 Use for: Coloring in small amounts, or flavoring of Stouts and Porters in larger amounts.</NOTES>
@@ -282,7 +282,7 @@ Use for: Coloring in small amounts, or flavoring of Stouts and Porters in larger
  <YIELD>55.0000000</YIELD>
  <COLOR>500.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Unmalted barley roasted at high temperature to create a dry, coffee like flavor.
 Imparts a sharp acrid flavor characteristic of dry stouts.
@@ -332,7 +332,7 @@ Gives &#34;dryness&#34; to a stout or porter -- much more so than regular Roaste
  <YIELD>100.0000000</YIELD>
  <COLOR>50.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Imparts a rich sweet flavor. Used in Scottish ales, holiday ales and some old ales.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -356,7 +356,7 @@ Gives &#34;dryness&#34; to a stout or porter -- much more so than regular Roaste
  <YIELD>100.0000000</YIELD>
  <COLOR>8.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Imparts a rich sweet flavor. Used in Scottish ales, holiday ales and some old ales.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -476,7 +476,7 @@ Gives &#34;dryness&#34; to a stout or porter -- much more so than regular Roaste
  <YIELD>100.0000000</YIELD>
  <COLOR>0.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Common household baking sugar.
 Lightens flavor and body of beer.
@@ -502,7 +502,7 @@ Can contribute a cider-like flavor to the beer if not cold-fermented or used in 
  <YIELD>72.0000000</YIELD>
  <COLOR>2.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Significantly increases foam/head retention and body of the beer.
 Also sold under the names &#34;Dextrine&#34; and &#34;Cara-Foam&#34;</NOTES>
@@ -527,7 +527,7 @@ Also sold under the names &#34;Dextrine&#34; and &#34;Cara-Foam&#34;</NOTES>
  <YIELD>75.0000000</YIELD>
  <COLOR>30.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds body, color and improves head retention.
 Also called &#34;Crystal&#34; malt.</NOTES>
@@ -553,7 +553,7 @@ Also called &#34;Crystal&#34; malt.</NOTES>
  <COLOR>130.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
  <ORIGIN>Germany</ORIGIN>
- <SUPPLIER>Wyermann</SUPPLIER>
+ <SUPPLIER>Weyermann</SUPPLIER>
  <NOTES>Very dark crystal malt - similar to a crystal 120 or Caramunich 120 malt.  Adds strong caramel flavor, red color, and malty aroma.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
  <MOISTURE>4.0000000</MOISTURE>
@@ -648,7 +648,7 @@ Also called &#34;Crystal&#34; malt.</NOTES>
  <YIELD>72.0000000</YIELD>
  <COLOR>2.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Significantly increases foam/head retention and body of the beer.
 Also sold under the names &#34;Dextrine&#34; and &#34;Cara-Pils (TM)&#34;</NOTES>
@@ -674,8 +674,8 @@ Also sold under the names &#34;Dextrine&#34; and &#34;Cara-Pils (TM)&#34;</NOTES
  <COLOR>46.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
  <ORIGIN>Germany</ORIGIN>
- <SUPPLIER>Wyermann</SUPPLIER>
- <NOTES>Caramel wheat malt - emphasizes wheat malt aroma and adds color to the beer.  Popular for Dunkelweizens.  Also known as Carawheat -- which is a registered trademark of Wyermann Malting.</NOTES>
+ <SUPPLIER>Weyermann</SUPPLIER>
+ <NOTES>Caramel wheat malt - emphasizes wheat malt aroma and adds color to the beer.  Popular for Dunkelweizens.  Also known as Carawheat -- which is a registered trademark of Weyermann Malting.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
  <MOISTURE>4.0000000</MOISTURE>
  <DIASTATIC_POWER>0.0000000</DIASTATIC_POWER>
@@ -697,7 +697,7 @@ Also sold under the names &#34;Dextrine&#34; and &#34;Cara-Pils (TM)&#34;</NOTES
  <YIELD>75.0000000</YIELD>
  <COLOR>10.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds body, color and improves head retention.
 Also called &#34;Crystal&#34; malt.</NOTES>
@@ -722,7 +722,7 @@ Also called &#34;Crystal&#34; malt.</NOTES>
  <YIELD>75.0000000</YIELD>
  <COLOR>20.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds body, color and improves head retention.
 Also called &#34;Crystal&#34; malt.</NOTES>
@@ -747,7 +747,7 @@ Also called &#34;Crystal&#34; malt.</NOTES>
  <YIELD>75.0000000</YIELD>
  <COLOR>30.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds body, color and improves head retention.
 Also called &#34;Crystal&#34; malt.</NOTES>
@@ -772,7 +772,7 @@ Also called &#34;Crystal&#34; malt.</NOTES>
  <YIELD>74.0000000</YIELD>
  <COLOR>40.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds body, color and improves head retention.
 Also called &#34;Crystal&#34; malt.</NOTES>
@@ -797,7 +797,7 @@ Also called &#34;Crystal&#34; malt.</NOTES>
  <YIELD>74.0000000</YIELD>
  <COLOR>60.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds body, color and improves head retention.
 Also called &#34;Crystal&#34; malt.</NOTES>
@@ -822,7 +822,7 @@ Also called &#34;Crystal&#34; malt.</NOTES>
  <YIELD>74.0000000</YIELD>
  <COLOR>80.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds body, color and improves head retention.
 Also called &#34;Crystal&#34; malt.</NOTES>
@@ -847,7 +847,7 @@ Also called &#34;Crystal&#34; malt.</NOTES>
  <YIELD>72.0000000</YIELD>
  <COLOR>120.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds body, color and improves head retention.
 Also called &#34;Crystal&#34; malt.  Very Dark</NOTES>
@@ -896,7 +896,7 @@ Also called &#34;Crystal&#34; malt.  Very Dark</NOTES>
  <YIELD>75.0000000</YIELD>
  <COLOR>20.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds body, color and improves head retention.
 Also called &#34;Crystal&#34; malt.</NOTES>
@@ -945,7 +945,7 @@ Also called &#34;Crystal&#34; malt.</NOTES>
  <YIELD>60.0000000</YIELD>
  <COLOR>350.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Dark malt that gives a rich red or brown color and nutty flavor.
 Use for: Brown ales, porters, some stouts
@@ -1045,7 +1045,7 @@ Maintains some malty flavor, not as dark as roasted malt.</NOTES>
  <YIELD>100.0000000</YIELD>
  <COLOR>0.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Widely used for bottling at rate of approx 2/3 cup per 5 gallons of beer</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -1069,7 +1069,7 @@ Maintains some malty flavor, not as dark as roasted malt.</NOTES>
  <YIELD>78.3000000</YIELD>
  <COLOR>1.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Syrup derived from corn with many of the same properties as corn sugar.  May be used to enhance gravity without adding much body or flavor.  Limit percentage in batch to avoid wine/cider flavors.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -1093,7 +1093,7 @@ Maintains some malty flavor, not as dark as roasted malt.</NOTES>
  <YIELD>80.0000000</YIELD>
  <COLOR>1.3000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Generally a neutral flavor, used to reduce maltiness of beer
 Produces beer with a milder, less malty flavor
@@ -1119,7 +1119,7 @@ Uses: Primarily for light Bohemian and Pilsner lagers</NOTES>
  <YIELD>95.0000000</YIELD>
  <COLOR>17.5000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Dark dry extract for general purpose use.
 Use as base or to increase gravity of any dark ale or lager.</NOTES>
@@ -1144,7 +1144,7 @@ Use as base or to increase gravity of any dark ale or lager.</NOTES>
  <YIELD>78.0000000</YIELD>
  <COLOR>17.5000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Unhopped dark liquid extract.
 Use as a base malt for any dark beer.
@@ -1194,7 +1194,7 @@ Examples: Porter, Brown ale, Bock, Oktoberfest, Stouts</NOTES>
  <YIELD>95.0000000</YIELD>
  <COLOR>3.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Very light color dry malt extract for general purpose use.
 Use as base or to increase gravity of any ale or lager.</NOTES>
@@ -1219,7 +1219,7 @@ Use as base or to increase gravity of any ale or lager.</NOTES>
  <YIELD>80.0000000</YIELD>
  <COLOR>1.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Imparts a corn or grain taste.  Mash required. Used to increase gravity of American lagers.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -1243,7 +1243,7 @@ Use as base or to increase gravity of any ale or lager.</NOTES>
  <YIELD>75.0000000</YIELD>
  <COLOR>1.0000000</COLOR>
  <ADD_AFTER_BOIL>TRUE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Can be used to lighten flavor and body when substituted for malt.
 Generally limit to 30% when used as an adjunct. Pasturize and add to primary during fermentation. Use up to 100% for meads.</NOTES>
@@ -1340,7 +1340,7 @@ Generally limit to 30% when used as an adjunct. Pasturize and add to primary dur
  <YIELD>95.0000000</YIELD>
  <COLOR>8.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Pale dry malt extract for general purpose use.
 Use as base or to increase gravity of any full bodied ale or lager.</NOTES>
@@ -1389,7 +1389,7 @@ Use as base or to increase gravity of any full bodied ale or lager.</NOTES>
  <YIELD>65.2000000</YIELD>
  <COLOR>35.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>If added during the boil it will add a dry, woodsy flavor. If added at bottling, the smooth maple flavor comes through.  Used for maple ales, porters, browns.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -1461,7 +1461,7 @@ Use as base or to increase gravity of any full bodied ale or lager.</NOTES>
  <YIELD>76.1000000</YIELD>
  <COLOR>0.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Not fully fermentable, so it adds lasting sweetness. Lactose can be added to lend  sweetness to Sweet Stouts and Porters.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -1485,7 +1485,7 @@ Use as base or to increase gravity of any full bodied ale or lager.</NOTES>
  <YIELD>78.3000000</YIELD>
  <COLOR>80.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Imparts a strong, sweet flavor.  Used primarily in stouts and porters.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -1535,7 +1535,7 @@ Use for: Bock, Porter, Marzen, Oktoberfest beers</NOTES>
  <YIELD>77.0000000</YIELD>
  <COLOR>10.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Malty-sweet flavor characteristic and adds a slight orange color to the beer.
 Does not contribute signficantly to body or head retention.
@@ -1561,7 +1561,7 @@ Use for: Bock, Porter, Marzen, Oktoberfest beers</NOTES>
  <YIELD>75.0000000</YIELD>
  <COLOR>20.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Malty-sweet flavor characteristic and adds a orange to deep orange color to the beer.
 Does not contribute signficantly to body or head retention.
@@ -1587,7 +1587,7 @@ Use for: Bock, Porter, Marzen, Oktoberfest beers</NOTES>
  <YIELD>80.0000000</YIELD>
  <COLOR>1.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds body, mouth feel and head retention to the beer
 Used in oatmeal stouts and porters
@@ -1614,7 +1614,7 @@ Protein rest recommended unless flakes are pregelatinized</NOTES>
  <YIELD>80.0000000</YIELD>
  <COLOR>1.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Malted oats.  Adds body, mouth feel and head retention to the beer  Creates chill haze in lighter beers, so is primarily used in dark ones.
 </NOTES>
@@ -1639,7 +1639,7 @@ Protein rest recommended unless flakes are pregelatinized</NOTES>
  <YIELD>78.0000000</YIELD>
  <COLOR>8.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Unhopped pale liquid extract.
 Use as a base malt for any ale or lager.</NOTES>
@@ -1714,7 +1714,7 @@ Lower diastatic power than American 2 Row Pale Malt</NOTES>
  <YIELD>79.0000000</YIELD>
  <COLOR>2.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Base malt for all beer styles</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -1738,7 +1738,7 @@ Lower diastatic power than American 2 Row Pale Malt</NOTES>
  <YIELD>76.0000000</YIELD>
  <COLOR>2.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Base malt for all beer styles</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -1763,7 +1763,7 @@ Lower diastatic power than American 2 Row Pale Malt</NOTES>
  <COLOR>3.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
  <ORIGIN>United Kingdom</ORIGIN>
- <SUPPLIER>Maris Otter</SUPPLIER>
+ <SUPPLIER></SUPPLIER>
  <NOTES>Premium base malt from the UK.  Popular for many English styles of beer including ales, pale ales and bitters.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
  <MOISTURE>3.0000000</MOISTURE>
@@ -1882,7 +1882,7 @@ Lower diastatic power than American 2 Row Pale Malt</NOTES>
  <YIELD>78.0000000</YIELD>
  <COLOR>3.5000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Unhopped pale liquid extract.
 Use as a base malt for any ale or lager.</NOTES>
@@ -1907,7 +1907,7 @@ Use as a base malt for any ale or lager.</NOTES>
  <YIELD>69.6000000</YIELD>
  <COLOR>7.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Used like other rice adjuncts in American and Japenes lagers to provide a dry, clean taste and light body.  Adds gravity without changing body or flavor substantially.  Use in place of corn sugar in small quantities.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -1931,7 +1931,7 @@ Use as a base malt for any ale or lager.</NOTES>
  <YIELD>0.0000000</YIELD>
  <COLOR>0.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Hulls are introduced to improve the speed of lautering when making high gravity or high adjunct beers.
 Hulls are neutral in flavor, body and color, and are inert
@@ -1957,7 +1957,7 @@ Good for wheat beers, Wits, and others that have high protein mashes.</NOTES>
  <YIELD>70.0000000</YIELD>
  <COLOR>1.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Used to add fermentables without increasing body or flavor.
 Produces a milder, less grainy tasting beer.
@@ -1983,7 +1983,7 @@ Examples: American lagers, Bohemian lagers, Pilsners</NOTES>
  <YIELD>55.0000000</YIELD>
  <COLOR>300.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Roasted at high temperature to create a burnt, grainy, coffee like flavor.
 Imparts a red to deep brown color to beer, and very strong roasted flavor.
@@ -2009,7 +2009,7 @@ Use 2-4% in Brown ales to add a nutty flavor, or 3-10% in Porters and Stouts for
  <YIELD>63.0000000</YIELD>
  <COLOR>4.7000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Adds a dry, crisp character to the beer.  
 Yields a deep red color, and a distinctive rye flavor
@@ -2035,7 +2035,7 @@ Must limit to 10-15% fo the mash as it tends to produce &#34;stuck&#34; mashes.<
  <YIELD>78.3000000</YIELD>
  <COLOR>2.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Imparts a dry, crisp rye flavor to rye beers.  Can be easier to mash than raw rye.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -2109,7 +2109,7 @@ Used primarily for German Rauchbier but can also be added to Brown Ales and Port
  <YIELD>72.0000000</YIELD>
  <COLOR>50.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Use for English ales, nut brown ales and porters.
 Adds a toasted, biscuit like flavor and aroma</NOTES>
@@ -2134,7 +2134,7 @@ Adds a toasted, biscuit like flavor and aroma</NOTES>
  <YIELD>100.0000000</YIELD>
  <COLOR>1.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>White table sugar, or sucrose primarily is used to increase alcohol. Using too much will add a cider flavor to beer.</NOTES>
  <COARSE_FINE_DIFF>1.5000000</COARSE_FINE_DIFF>
@@ -2230,7 +2230,7 @@ Adds a toasted, biscuit like flavor and aroma</NOTES>
  <YIELD>73.0000000</YIELD>
  <COLOR>25.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Toasted malt that adds a &#34;Biscuit&#34; or toasted flavor to English ales.
 Use for: Nut brown ales, porters</NOTES>
@@ -2280,7 +2280,7 @@ Imparts a golden to orange color to the beer.</NOTES>
  <YIELD>95.0000000</YIELD>
  <COLOR>8.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Wheat based dry extract for use in all wheat beers.
 Use as base or to increase gravity of any wheat beer.
@@ -2306,7 +2306,7 @@ Examples: Weizen, weiss, wheat ales and lagers</NOTES>
  <YIELD>78.0000000</YIELD>
  <COLOR>8.0000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Unhopped Wheat liquid malt extract.
 Contains approx 60% Wheat, 40% Barley
@@ -2404,7 +2404,7 @@ Use for Bavarian wheats, weizens, weiss and dunkel weizen styles.</NOTES>
  <YIELD>77.0000000</YIELD>
  <COLOR>1.6000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Flaked wheat adds to increased body and foam retention
 Used in place of raw or torrified wheat for faster conversion and better yield.
@@ -2455,7 +2455,7 @@ Examples: Belgian White beer, Wit</NOTES>
  <YIELD>79.0000000</YIELD>
  <COLOR>1.7000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>Unmodified wheat that has been &#34;popped&#34; to open the kernels
 Used primarily in place of raw wheat when making Belgian White and Wit
@@ -2482,7 +2482,7 @@ Protein rest recommended when mashing</NOTES>
  <YIELD>86.0000000</YIELD>
  <COLOR>2.4000000</COLOR>
  <ADD_AFTER_BOIL>FALSE</ADD_AFTER_BOIL>
- <ORIGIN>US</ORIGIN>
+ <ORIGIN>United States</ORIGIN>
  <SUPPLIER></SUPPLIER>
  <NOTES>White wheat gives a malty flavor not available from raw wheat.
 Used in Weiss, Wit and White beers</NOTES>
