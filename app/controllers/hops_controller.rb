@@ -13,8 +13,8 @@ class HopsController < ApplicationController
     @hop = current_user.hops.build(hop_params)
 
     if @hop.save
-      redirect_to :action => :index,
-        notice: "Hop was successfully created."
+      flash[:notice] = "#{@hop.name} was successfully created."
+      redirect_to :action => :index
     else
       render action: "new"
     end
@@ -28,8 +28,8 @@ class HopsController < ApplicationController
     @hop = current_user.hops.find(params[:id])
 
     if @hop.update_attributes(hop_params)
-      redirect_to :action => :index,
-        notice: "Hop was successfully updated."
+      flash[:notice] = "#{@hop.name} was successfully updated."
+      redirect_to :action => :index
     else
       render action: "edit"
     end
@@ -37,6 +37,7 @@ class HopsController < ApplicationController
 
   def destroy
     @hop = current_user.hops.find(params[:id])
+    flash[:notice] = "#{@hop.name} was deleted."
     @hop.destroy
     redirect_to hops_path
   end

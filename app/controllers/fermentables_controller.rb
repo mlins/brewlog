@@ -13,8 +13,8 @@ class FermentablesController < ApplicationController
     @fermentable = current_user.fermentables.build(fermentable_params)
 
     if @fermentable.save
-      redirect_to :action => :index,
-        notice: "Fermentable was successfully created."
+      flash[:notice] = "#{@fermentable.name} was successfully created."
+      redirect_to :action => :index
     else
       render action: "new"
     end
@@ -28,8 +28,8 @@ class FermentablesController < ApplicationController
     @fermentable = current_user.fermentables.find(params[:id])
 
     if @fermentable.update_attributes(fermentable_params)
-      redirect_to :action => :index,
-        notice: "Fermentable was successfully updated."
+      flash[:notice] = "#{@fermentable.name} was successfully updated."
+      redirect_to :action => :index
     else
       render action: "edit"
     end
@@ -37,6 +37,7 @@ class FermentablesController < ApplicationController
 
   def destroy
     @fermentable = current_user.fermentables.find(params[:id])
+    flash[:notice] = "#{@fermentable.name} was deleted."
     @fermentable.destroy
     redirect_to fermentables_path
   end
