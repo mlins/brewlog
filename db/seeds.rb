@@ -62,5 +62,32 @@ fermentables["FERMENTABLES"]["FERMENTABLE"].each do |fermentable_xml|
   fermentable.save!
 end
 
+yeasts = Crack::XML.parse(
+  File.open(
+    File.join(Rails.root, 'db', 'seeds', 'yeasts.xml')
+  ).read
+)
+
+yeasts["YEASTS"]["YEAST"].each do |yeast_xml|
+  yeast_attributes = {}
+  yeast_xml.each do |k,v|
+    if k == "TYPE"
+      yeast_attributes.merge!({"description" => v.strip})
+    elsif k == "ATTENUATION"
+      yeast_attributes.merge!({"min_attenuation" => v.strip})
+      yeast_attributes.merge!({"max_attenuation" => v.strip})
+    else
+      if v
+        yeast_attributes.merge!({k.downcase => v.strip})
+      end
+    end
+  end
+
+  yeast = Yeast.new
+  yeast.attributes = yeast_attributes.reject{|k,v| !yeast.attributes.keys.member?(k.to_s) }
+  yeast.master = true
+  yeast.save!
+end
+
 user = User.create!(:email => "mattlins@gmail.com", :password => "password", :password_confirmation => "password")
 user.confirm!

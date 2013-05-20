@@ -29,8 +29,9 @@ class User < ActiveRecord::Base
 
   has_many :hops
   has_many :fermentables
+  has_many :yeasts
 
-  after_create :create_hops, :create_fermentables
+  after_create :create_hops, :create_fermentables, :create_yeasts
 
   private
 
@@ -53,6 +54,17 @@ class User < ActiveRecord::Base
         end
       )
       fermentable.save
+    end
+  end
+
+  def create_yeasts
+    Yeast.masters.each do |master|
+      yeast = yeasts.build(
+        master.attributes.keep_if do |k,v|
+          !%w(id master user_id).include?(k)
+        end
+      )
+      yeast.save
     end
   end
 end
