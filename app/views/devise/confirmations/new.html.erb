@@ -1,4 +1,4 @@
-<%= form_for @user, :url => confirmation_path(@user), :html => { :class => "form-session wide" } do |f| %>
+<%= form_for @user, url: confirmation_path(@user), html: { class: "form-session wide" } do |f| %>
   <h2 class="form-session-heading">Didn't get a confirmation email?</h2>
 
   <% if flash[:notice] %>
@@ -17,11 +17,11 @@
 
   <%= devise_error_messages! %>
 
-  <%= f.email_field :email, :class => "input-block-level", :placeholder => "Email address" %>
+  <%= f.email_field :email, class: "input-block-level", placeholder: "Email address" %>
 
   <button class="btn btn-large btn-primary" type="submit">Resend confirmation instructions</button>
 
   <div class='shared-links'>
-    <%= render :partial => "devise/shared/links" %>
+    <%= render partial: "devise/shared/links" %>
   </div>
 <% end %>

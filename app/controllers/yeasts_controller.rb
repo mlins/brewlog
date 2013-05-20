@@ -2,7 +2,7 @@ class YeastsController < ApplicationController
 
   def index
     @search = current_user.yeasts.search(params[:q])
-    @yeasts   = @search.result(:distinct => true)
+    @yeasts   = @search.result(distinct: true)
   end
 
   def new
@@ -14,7 +14,7 @@ class YeastsController < ApplicationController
 
     if @yeast.save
       flash[:notice] = "#{@yeast.name} was successfully created."
-      redirect_to :action => :index
+      redirect_to action: :index
     else
       render action: "new"
     end
@@ -29,7 +29,7 @@ class YeastsController < ApplicationController
 
     if @yeasts.update_attributes(yeast_params)
       flash[:notice] = "#{@yeast.name} was successfully updated."
-      redirect_to :action => :index
+      redirect_to action: :index
     else
       render action: "edit"
     end

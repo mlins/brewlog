@@ -36,18 +36,18 @@ class Hop < ActiveRecord::Base
   belongs_to :user
 
   validates_presence_of :name, :alpha, :beta
-  validates_uniqueness_of :name, :scope => :user_id
+  validates_uniqueness_of :name, scope: :user_id
 
-  validates_inclusion_of :description, :in => DESCRIPTIONS
-  validates_inclusion_of :form,        :in => FORMS
+  validates_inclusion_of :description, in: DESCRIPTIONS
+  validates_inclusion_of :form,        in: FORMS
 
   validates_numericality_of :alpha, :beta, :hsi, :humulone, :cohumulone,
     :adhumulone, :lupulone, :colupulone, :adlupulone, :humulene, :myrcene,
-    :caryophyllene, :farnese, :allow_nil => true
+    :caryophyllene, :farnese, allow_nil: true
 
-  validates_presence_of :user, :unless => :master?
+  validates_presence_of :user, unless: :master?
 
-  scope :masters, where(:master => true)
+  scope :masters, where(master: true)
 
   def self.countries
     Hop.select("DISTINCT(origin)").where("origin IS NOT NULL").collect { |h| h.origin }.sort

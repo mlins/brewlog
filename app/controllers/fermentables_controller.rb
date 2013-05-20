@@ -2,7 +2,7 @@ class FermentablesController < ApplicationController
 
   def index
     @search       = current_user.fermentables.search(params[:q])
-    @fermentables = @search.result(:distinct => true)
+    @fermentables = @search.result(distinct: true)
   end
 
   def new
@@ -14,7 +14,7 @@ class FermentablesController < ApplicationController
 
     if @fermentable.save
       flash[:notice] = "#{@fermentable.name} was successfully created."
-      redirect_to :action => :index
+      redirect_to action: :index
     else
       render action: "new"
     end
@@ -29,7 +29,7 @@ class FermentablesController < ApplicationController
 
     if @fermentable.update_attributes(fermentable_params)
       flash[:notice] = "#{@fermentable.name} was successfully updated."
-      redirect_to :action => :index
+      redirect_to action: :index
     else
       render action: "edit"
     end

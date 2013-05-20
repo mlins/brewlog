@@ -13,18 +13,18 @@
     <%= search_form_for @search do |f| %>
       <label>Name:</label>
       <div class="input-append entity-sidebar-search">
-        <%= f.text_field :name_cont, :class => "input-block-level", :placeholder => "Search" %>
+        <%= f.text_field :name_cont, class: "input-block-level", placeholder: "Search" %>
         <span class="add-on"><i class="icon-search"></i></span>
       </div>
 
       <label>Type:</label>
-      <%= f.select :description_eq, Fermentable::DESCRIPTIONS, {:include_blank => true}, {:class => "input-block-level"} %>
+      <%= f.select :description_eq, Fermentable::DESCRIPTIONS, {include_blank: true}, {class: "input-block-level"} %>
 
       <label>Origin:</label>
-      <%= f.select :origin_eq, Fermentable.countries, {:include_blank => true}, {:class => "input-block-level"} %>
+      <%= f.select :origin_eq, Fermentable.countries, {include_blank: true}, {class: "input-block-level"} %>
 
       <label>Supplier:</label>
-      <%= f.select :supplier_eq, Fermentable.suppliers, {:include_blank => true}, {:class => "input-block-level"} %>
+      <%= f.select :supplier_eq, Fermentable.suppliers, {include_blank: true}, {class: "input-block-level"} %>
 
       <div class="form-actions">
         <button type="submit" class="btn btn-primary pull-right"><i class="icon-filter"></i> Filter</button>

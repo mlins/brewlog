@@ -2,7 +2,7 @@ class HopsController < ApplicationController
 
   def index
     @search = current_user.hops.search(params[:q])
-    @hops   = @search.result(:distinct => true)
+    @hops   = @search.result(distinct: true)
   end
 
   def new
@@ -14,7 +14,7 @@ class HopsController < ApplicationController
 
     if @hop.save
       flash[:notice] = "#{@hop.name} was successfully created."
-      redirect_to :action => :index
+      redirect_to action: :index
     else
       render action: "new"
     end
@@ -29,7 +29,7 @@ class HopsController < ApplicationController
 
     if @hop.update_attributes(hop_params)
       flash[:notice] = "#{@hop.name} was successfully updated."
-      redirect_to :action => :index
+      redirect_to action: :index
     else
       render action: "edit"
     end

@@ -36,19 +36,19 @@ class Fermentable < ActiveRecord::Base
     :yield
 
   validates_presence_of :coarse_fine_difference, :moisture, :diastatic_power,
-    :protein, :if => :grain?
+    :protein, if: :grain?
 
-  validates_presence_of :ibu, :if => :extract?
+  validates_presence_of :ibu, if: :extract?
 
-  validates_inclusion_of :description, :in => DESCRIPTIONS
+  validates_inclusion_of :description, in: DESCRIPTIONS
 
   validates_numericality_of :max_in_batch, :potential, :yield,
     :coarse_fine_difference, :moisture, :diastatic_power, :protein,
-    :protein, :ibu, :color, :allow_nil => true
+    :protein, :ibu, :color, allow_nil: true
 
-  validates_presence_of :user, :unless => :master?
+  validates_presence_of :user, unless: :master?
 
-  scope :masters, where(:master => true)
+  scope :masters, where(master: true)
 
   def self.countries
     Fermentable.select("DISTINCT(origin)").where("origin IS NOT NULL").collect { |f| f.origin }.sort

@@ -13,34 +13,34 @@
     <%= search_form_for @search do |f| %>
       <label>Name:</label>
       <div class="input-append entity-sidebar-search">
-        <%= f.text_field :name_cont, :class => "input-block-level", :placeholder => "Search" %>
+        <%= f.text_field :name_cont, class: "input-block-level", placeholder: "Search" %>
         <span class="add-on"><i class="icon-search"></i></span>
       </div>
 
       <label>Type:</label>
-      <%= f.select :description_eq, Hop::DESCRIPTIONS, {:include_blank => true}, {:class => "input-block-level"} %>
+      <%= f.select :description_eq, Hop::DESCRIPTIONS, {include_blank: true}, {class: "input-block-level"} %>
 
       <label>Origin:</label>
-      <%= f.select :origin_eq, Hop.countries, {:include_blank => true}, {:class => "input-block-level"} %>
+      <%= f.select :origin_eq, Hop.countries, {include_blank: true}, {class: "input-block-level"} %>
 
       <label>Alpha:</label>
       <div class="controls controls-row">
         <label class="span4 control-label">between</label>
-        <%= f.select :alpha_gteq, 20.times.collect { |t| [t, t.to_f] }, {:include_blank => true}, {:class => "span3"} %>
+        <%= f.select :alpha_gteq, 20.times.collect { |t| [t, t.to_f] }, {include_blank: true}, {class: "span3"} %>
         <label class="span2 control-label">and</label>
-        <%= f.select :alpha_lteq, 20.times.collect { |t| [t, t.to_f] }, {:include_blank => true}, {:class => "span3"} %>
+        <%= f.select :alpha_lteq, 20.times.collect { |t| [t, t.to_f] }, {include_blank: true}, {class: "span3"} %>
       </div>
 
       <label class="hidden-phone">Beta:</label>
       <div class="controls controls-row hidden-phone">
         <label class="span4 control-label">between</label>
-        <%= f.select :beta_gteq, 20.times.collect { |t| [t, t.to_f] }, {:include_blank => true}, {:class => "span3"} %>
+        <%= f.select :beta_gteq, 20.times.collect { |t| [t, t.to_f] }, {include_blank: true}, {class: "span3"} %>
         <label class="span2 control-label">and</label>
-        <%= f.select :beta_lteq, 20.times.collect { |t| [t, t.to_f] }, {:include_blank => true}, {:class => "span3"} %>
+        <%= f.select :beta_lteq, 20.times.collect { |t| [t, t.to_f] }, {include_blank: true}, {class: "span3"} %>
       </div>
 
       <label class="hidden-phone">Form:</label>
-      <%= f.select :form_eq, Hop::FORMS, {:include_blank => true}, {:class => "input-block-level hidden-phone"} %>
+      <%= f.select :form_eq, Hop::FORMS, {include_blank: true}, {class: "input-block-level hidden-phone"} %>
 
       <div class="form-actions">
         <button type="submit" class="btn btn-primary pull-right"><i class="icon-filter"></i> Filter</button>
@@ -62,8 +62,8 @@
           <td><%= link_to hop.name, edit_hop_path(hop) %></td>
           <td><%= hop.description %></td>
           <td><%= hop.origin %></td>
-          <td><%= number_with_precision(hop.alpha, :precision => 2) %>%</td>
-          <td class="hidden-phone"><%= number_with_precision(hop.beta, :precision => 2) %>%</td>
+          <td><%= number_with_precision(hop.alpha, precision: 2) %>%</td>
+          <td class="hidden-phone"><%= number_with_precision(hop.beta, precision: 2) %>%</td>
           <td class="hidden-phone"><%= hop.form %></td>
         </tr>
       <% end %>
