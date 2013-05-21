@@ -16,3 +16,6 @@
 
 # Ignore binfiles
 /bin
+
+# Ignore DS_Store
+.DS_Store
