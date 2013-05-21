@@ -23,8 +23,8 @@
           <div class="span6">
             <%= f.text_field :min_attenuation, label: "Min Attenuation", class: "span6", append: "%" %>
             <%= f.text_field :max_attenuation, label: "Max Attenuation", class: "span6", append: "%" %>
-            <%= f.select :description, Yeast::DESCRIPTIONS, {}, { class: "span8" } %>
-            <%= f.select :flocculation, Yeast::FLOCCULATIONS, {}, { class: "span8" } %>
+            <%= f.select :description, Yeast::DESCRIPTIONS, {}, {class: "span8"} %>
+            <%= f.select :flocculation, Yeast::FLOCCULATIONS, {}, {class: "span8"} %>
             <%= f.select :form, Yeast::FORMS, {}, { class: "span8" } %>
           </div>
           <div class="span6">
