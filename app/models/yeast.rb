@@ -25,7 +25,7 @@ class Yeast < ActiveRecord::Base
 
   FORMS = %w(Liquid Dry Slant Culture)
   DESCRIPTIONS = %w(Ale Lager Wheat Wine Champagne)
-  FLOCCULATIONS = %w(Low Medium High)
+  FLOCCULATIONS = ['Low', 'Medium', 'High', 'Very High']
 
   belongs_to :user
 
