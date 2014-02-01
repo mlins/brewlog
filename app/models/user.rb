@@ -31,7 +31,10 @@ class User < ActiveRecord::Base
   has_many :fermentables
   has_many :yeasts
 
-  after_create :create_hops, :create_fermentables, :create_yeasts
+  has_many :styles
+
+  after_create :create_hops, :create_fermentables, :create_yeasts,
+    :create_styles
 
   private
 
@@ -65,6 +68,17 @@ class User < ActiveRecord::Base
         end
       )
       yeast.save
+    end
+  end
+
+  def create_styles
+    Style.masters.each do |master|
+      style = styles.build(
+        master.attributes.keep_if do |k,v|
+          !%w(id master user_id).include?(k)
+        end
+      )
+      style.save
     end
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130516015529) do
+ActiveRecord::Schema.define(:version => 20130522224915) do
 
   create_table "fermentables", :force => true do |t|
     t.string   "name"
@@ -59,6 +59,35 @@ ActiveRecord::Schema.define(:version => 20130516015529) do
     t.boolean  "master",        :default => false
     t.datetime "created_at",                       :null => false
     t.datetime "updated_at",                       :null => false
+  end
+
+  create_table "styles", :force => true do |t|
+    t.string   "name"
+    t.string   "category"
+    t.string   "category_number"
+    t.string   "style_letter"
+    t.string   "style_guide"
+    t.string   "description"
+    t.decimal  "og_min"
+    t.decimal  "og_max"
+    t.decimal  "fg_min"
+    t.decimal  "fg_max"
+    t.decimal  "ibu_min"
+    t.decimal  "ibu_max"
+    t.decimal  "color_min"
+    t.decimal  "color_max"
+    t.decimal  "carb_min"
+    t.decimal  "carb_max"
+    t.decimal  "abv_min"
+    t.decimal  "abv_max"
+    t.text     "notes"
+    t.text     "profile"
+    t.text     "ingredients"
+    t.text     "examples"
+    t.boolean  "master"
+    t.integer  "user_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "users", :force => true do |t|

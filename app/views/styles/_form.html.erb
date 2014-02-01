@@ -1,0 +1,24 @@
+<%= form_for @style, builder: BootstrapFormBuilder do |f| %>
+  <div class="row-fluid">
+    <div class="span3">
+      <fieldset>
+        <legend>General</legend>
+        <div class="row-fluid">
+          <%= f.text_field :name, class: "span11" %>
+          <%= f.text_field :category, class: "span11" %>
+          <%= f.text_field :category_number, class: "span11" %>
+          <%= f.text_field :style_letter, class: "span11" %>
+          <%= f.text_field :style_guide, class: "span11" %>
+        </div>
+        <div class="row-fluid">
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="form-actions">
+    <% unless @style.new_record? %>
+      <a href="<%= style_path(@style) %>" class="btn btn-danger" data-confirm="Are you sure?" data-method="delete" rel="nofollow"><i class="icon-trash"></i> Delete</a>
+    <% end %>
+    <button type="submit" class="btn btn-primary"><i class="icon-save"></i> Save</button>
+  </div>
+<% end %>

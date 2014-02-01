@@ -89,5 +89,29 @@ yeasts["YEASTS"]["YEAST"].each do |yeast_xml|
   yeast.save!
 end
 
+styles = Crack::XML.parse(
+  File.open(
+    File.join(Rails.root, 'db', 'seeds', 'styles.xml')
+  ).read
+)
+
+styles["STYLES"]["STYLE"].each do |style_xml|
+  style_attributes = {}
+  style_xml.each do |k,v|
+    if k == "TYPE"
+      style_attributes.merge!({"description" => v.strip})
+    else
+      if v
+        style_attributes.merge!({k.downcase => v.strip})
+      end
+    end
+  end
+
+  style = Style.new
+  style.attributes = style_attributes.reject{|k,v| !style.attributes.keys.member?(k.to_s) }
+  style.master = true
+  style.save!
+end
+
 user = User.create!(:email => "mattlins@gmail.com", :password => "password", :password_confirmation => "password")
 user.confirm!

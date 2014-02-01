@@ -1,2 +1,0 @@
-BrewLog = {}
-BrewLog.Fermentables = {}

@@ -1,0 +1,83 @@
+# == Schema Information
+#
+# Table name: styles
+#
+#  id              :integer          not null, primary key
+#  name            :string(255)
+#  category        :string(255)
+#  category_number :string(255)
+#  style_letter    :string(255)
+#  style_guide     :string(255)
+#  description     :string(255)
+#  og_min          :decimal(, )
+#  og_max          :decimal(, )
+#  fg_min          :decimal(, )
+#  fg_max          :decimal(, )
+#  ibu_min         :decimal(, )
+#  ibu_max         :decimal(, )
+#  color_min       :decimal(, )
+#  color_max       :decimal(, )
+#  carb_min        :decimal(, )
+#  carb_max        :decimal(, )
+#  abv_min         :decimal(, )
+#  abv_max         :decimal(, )
+#  notes           :text
+#  profile         :text
+#  ingredients     :text
+#  examples        :text
+#  master          :boolean
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  category: MyString
+  category_number: MyString
+  style_letter: MyString
+  style_guide: MyString
+  description: MyString
+  og_min: 9.99
+  og_max: 9.99
+  fg_min: 9.99
+  fg_max: 9.99
+  ibu_min: 9.99
+  ibu_max: 9.99
+  color_min: 9.99
+  color_max: 9.99
+  carb_min: 9.99
+  carb_max: 9.99
+  abv_min: 9.99
+  abv_max: 9.99
+  notes: MyText
+  profile: MyText
+  ingredients: MyText
+  examples: MyText
+  master: false
+
+two:
+  name: MyString
+  category: MyString
+  category_number: MyString
+  style_letter: MyString
+  style_guide: MyString
+  description: MyString
+  og_min: 9.99
+  og_max: 9.99
+  fg_min: 9.99
+  fg_max: 9.99
+  ibu_min: 9.99
+  ibu_max: 9.99
+  color_min: 9.99
+  color_max: 9.99
+  carb_min: 9.99
+  carb_max: 9.99
+  abv_min: 9.99
+  abv_max: 9.99
+  notes: MyText
+  profile: MyText
+  ingredients: MyText
+  examples: MyText
+  master: false

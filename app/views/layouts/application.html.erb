@@ -40,7 +40,11 @@
                 ["Hops", hops_path],
                 ["Yeast", yeasts_path]
               ] %>
-              <%= nav_link "Profiles", "tags", "/profiles" %>
+              <%= nav_dropdown "Profiles", "tags", [
+                ["Styles", styles_path],
+                ["Equipment", "#"],
+                ["Mash", "#"]
+              ] %>
               <%= nav_link "Settings", "cogs", "/settings" %>
             </ul>
             <p class="navbar-text pull-right">

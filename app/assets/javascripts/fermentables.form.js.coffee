@@ -1,10 +1,6 @@
 class BrewLog.Fermentables.Form
   constructor: (@name) ->
 
-  run: ->
-    @bindEvents()
-    @updateFields()
-
   bindEvents: ->
     $("#fermentable_description").on('change', @updateFields)
 
