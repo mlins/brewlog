@@ -7,7 +7,7 @@
           <%= f.text_field :name, class: "span11" %>
           <%= f.text_field :supplier, class: "span11" %>
           <%= f.select :description, Fermentable::DESCRIPTIONS, {}, { class: "span11" } %>
-          <%= f.country_select :origin, ["United States", "United Kingdom", "Germany", "New Zealand", "Australia"], {}, { class: "span11" } %>
+          <%= f.country_code_select :origin, [], {}, { class: "span11" } %>
         </div>
 
         <div class="row-fluid">

@@ -31,13 +31,12 @@
 #
 
 class Style < ActiveRecord::Base
-  include ActiveModel::ForbiddenAttributesProtection
 
   DESCRIPTIONS = %w(Lager Ale Mead Wheat Mixed Cider)
 
   belongs_to :user
 
-  validates_presence_of :abv_max, :abv_min, :carb_max, :carb_min, 
+  validates_presence_of :abv_max, :abv_min, :carb_max, :carb_min,
     :color_max, :color_min, :fg_max, :fg_min, :ibu_max, :ibu_min,
     :name, :og_max, :og_min
 

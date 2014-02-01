@@ -28,7 +28,6 @@
 #
 
 class Hop < ActiveRecord::Base
-  include ActiveModel::ForbiddenAttributesProtection
 
   FORMS        = %w(Pellet Whole)
   DESCRIPTIONS = %w(Both Bittering Aroma)

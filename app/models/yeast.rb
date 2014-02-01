@@ -21,7 +21,6 @@
 #
 
 class Yeast < ActiveRecord::Base
-  include ActiveModel::ForbiddenAttributesProtection
 
   FORMS = %w(Liquid Dry Slant Culture)
   DESCRIPTIONS = %w(Ale Lager Wheat Wine Champagne)

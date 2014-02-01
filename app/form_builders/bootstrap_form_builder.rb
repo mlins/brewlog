@@ -106,7 +106,7 @@ class BootstrapFormBuilder < ActionView::Helpers::FormBuilder
     end
   end
 
-  def country_select(name, *args)
+  def country_code_select(name, *args)
     has_error  = !object.errors[name].empty?
     classes    = "control-group"
     error_html = ""

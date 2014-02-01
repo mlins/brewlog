@@ -26,7 +26,6 @@
 #
 
 class Fermentable < ActiveRecord::Base
-  include ActiveModel::ForbiddenAttributesProtection
 
   DESCRIPTIONS = ["Grain", "Sugar", "Extract", "Dry Extract", "Adjunct"]
 
