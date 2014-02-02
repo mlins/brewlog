@@ -9,14 +9,19 @@ gem 'ransack'
 gem 'i18n_country_select'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'sass-rails'
+gem 'coffee-rails'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass-rails'
+gem 'uglifier'
 
 group :development do
   gem 'hirb'
   gem 'wirble'
   gem 'annotate'
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem 'bootstrap-sass'
-  gem 'font-awesome-sass-rails'
-  gem 'uglifier'
+end
+
+group :test do
+  gem 'poltergeist'
+  gem 'minitest-capybara'
 end
