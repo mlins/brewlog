@@ -24,4 +24,7 @@ end
 group :test do
   gem 'poltergeist'
   gem 'minitest-capybara'
+  gem 'capybara-screenshot'
+  gem 'database_cleaner'
+  gem 'minitest-reporters'
 end

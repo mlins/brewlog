@@ -44,5 +44,5 @@ class Style < ActiveRecord::Base
 
   validates_presence_of :user, unless: :master?
 
-  scope :masters, where(master: true)
+  scope :masters, -> { where(master: true) }
 end

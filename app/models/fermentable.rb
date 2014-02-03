@@ -47,7 +47,7 @@ class Fermentable < ActiveRecord::Base
 
   validates_presence_of :user, unless: :master?
 
-  scope :masters, where(master: true)
+  scope :masters, -> { where(master: true) }
 
   def self.countries
     Fermentable.select("DISTINCT(origin)").where("origin IS NOT NULL").collect { |f| f.origin }.sort

@@ -36,7 +36,7 @@ class Yeast < ActiveRecord::Base
 
   validates_presence_of :user, unless: :master?
 
-  scope :masters, where(master: true)
+  scope :masters, -> { where(master: true) }
 
   def self.laboratories
     Yeast.select("DISTINCT(laboratory)").where("laboratory IS NOT NULL").collect { |f| f.laboratory }.sort
