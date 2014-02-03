@@ -20,37 +20,38 @@
 
   <body data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>">
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="/">BrewLog</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="divider-vertical"></li>
-              <%= nav_link "Dashboard", "dashboard", "/" %>
-              <%= nav_link "Recipes", "book", "/recipes" %>
-              <%= nav_link "Batches", "inbox", "/batches" %>
-              <%= nav_dropdown "Ingredients", "beaker", [
-                ["Fermentables", fermentables_path],
-                ["Hops", hops_path],
-                ["Yeast", yeasts_path]
-              ] %>
-              <%= nav_dropdown "Profiles", "tags", [
-                ["Styles", styles_path],
-                ["Equipment", "#"],
-                ["Mash", "#"]
-              ] %>
-              <%= nav_link "Settings", "cogs", "/settings" %>
-            </ul>
-            <p class="navbar-text pull-right">
-              <%= current_user.email %> - <%= link_to("Sign out", destroy_user_session_path, method: :delete) %>
-            </p>
-          </div><!--/.nav-collapse -->
+          </button>
+          <a class="navbar-brand" href="/">BrewLog</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            <%= nav_link "Dashboard", "dashboard", "/" %>
+            <%= nav_link "Recipes", "book", "/recipes" %>
+            <%= nav_link "Batches", "inbox", "/batches" %>
+            <%= nav_dropdown "Ingredients", "beaker", [
+              ["Fermentables", fermentables_path],
+              ["Hops", hops_path],
+              ["Yeast", yeasts_path]
+            ] %>
+            <%= nav_dropdown "Profiles", "tags", [
+              ["Styles", styles_path],
+              ["Equipment", "#"],
+              ["Mash", "#"]
+            ] %>
+            <%= nav_link "Settings", "cogs", "/settings" %>
+          </ul>
+          <p class="navbar-text pull-right">
+            <%= current_user.email %> - <%= link_to("Sign out", destroy_user_session_path, method: :delete) %>
+          </p>
         </div>
       </div>
     </div>

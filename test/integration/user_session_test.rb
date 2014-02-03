@@ -11,6 +11,16 @@ class UserSessionTest < ActionDispatch::IntegrationTest
     sign_up_user
     sign_in_user
 
+    assert page.has_content?('Signed in successfully.')
     assert_equal root_path, current_path
+  end
+
+  def test_sign_out
+    sign_up_user
+    sign_in_user
+
+    click_on 'Sign out'
+
+    assert_equal new_user_session_path, current_path
   end
 end
