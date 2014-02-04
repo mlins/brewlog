@@ -32,6 +32,8 @@
 
 class Style < ActiveRecord::Base
 
+  include Masterable
+
   DESCRIPTIONS = %w(Lager Ale Mead Wheat Mixed Cider)
 
   belongs_to :user
@@ -43,6 +45,4 @@ class Style < ActiveRecord::Base
   validates_inclusion_of :description,  in: DESCRIPTIONS
 
   validates_presence_of :user, unless: :master?
-
-  scope :masters, -> { where(master: true) }
 end

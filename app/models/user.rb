@@ -28,55 +28,5 @@ class User < ActiveRecord::Base
   has_many :hops
   has_many :fermentables
   has_many :yeasts
-
   has_many :styles
-
-  after_create :create_hops, :create_fermentables, :create_yeasts,
-    :create_styles
-
-  private
-
-  def create_hops
-    Hop.masters.each do |master|
-      hop = hops.build(
-        master.attributes.keep_if do |k,v|
-          !%w(id master user_id).include?(k)
-        end
-      )
-      hop.save
-    end
-  end
-
-  def create_fermentables
-    Fermentable.masters.each do |master|
-      fermentable = fermentables.build(
-        master.attributes.keep_if do |k,v|
-          !%w(id master user_id).include?(k)
-        end
-      )
-      fermentable.save
-    end
-  end
-
-  def create_yeasts
-    Yeast.masters.each do |master|
-      yeast = yeasts.build(
-        master.attributes.keep_if do |k,v|
-          !%w(id master user_id).include?(k)
-        end
-      )
-      yeast.save
-    end
-  end
-
-  def create_styles
-    Style.masters.each do |master|
-      style = styles.build(
-        master.attributes.keep_if do |k,v|
-          !%w(id master user_id).include?(k)
-        end
-      )
-      style.save
-    end
-  end
 end

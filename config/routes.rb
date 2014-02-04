@@ -5,7 +5,7 @@ Brewlog::Application.routes.draw do
 
   resources :styles
 
-  devise_for :users
+  devise_for :users, controllers: { registrations: :registrations }
 
-  root to: 'dashboard#index'  
+  root to: 'dashboard#index'
 end

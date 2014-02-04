@@ -19,6 +19,7 @@ group :development do
   gem 'hirb'
   gem 'wirble'
   gem 'annotate'
+  gem 'letter_opener'
 end
 
 group :test do
@@ -27,4 +28,5 @@ group :test do
   gem 'capybara-screenshot'
   gem 'database_cleaner'
   gem 'minitest-reporters'
+  gem 'mocha'
 end

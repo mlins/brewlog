@@ -22,6 +22,8 @@
 
 class Yeast < ActiveRecord::Base
 
+  include Masterable
+
   FORMS = %w(Liquid Dry Slant Culture)
   DESCRIPTIONS = %w(Ale Lager Wheat Wine Champagne)
   FLOCCULATIONS = ['Low', 'Medium', 'High', 'Very High']
@@ -35,8 +37,6 @@ class Yeast < ActiveRecord::Base
   validates_inclusion_of :flocculation, in: FLOCCULATIONS 
 
   validates_presence_of :user, unless: :master?
-
-  scope :masters, -> { where(master: true) }
 
   def self.laboratories
     Yeast.select("DISTINCT(laboratory)").where("laboratory IS NOT NULL").collect { |f| f.laboratory }.sort

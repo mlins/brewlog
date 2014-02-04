@@ -1,11 +1,12 @@
 ENV["RAILS_ENV"] = "test"
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
-require "minitest/reporters"
+require 'minitest/reporters'
 require 'capybara/rails'
 require 'capybara/poltergeist'
 require 'capybara-screenshot/minitest'
 require 'database_cleaner'
+require 'mocha/mini_test'
 
 Capybara.default_driver = :poltergeist
 DatabaseCleaner.strategy = :truncation

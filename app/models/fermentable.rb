@@ -27,6 +27,8 @@
 
 class Fermentable < ActiveRecord::Base
 
+  include Masterable
+
   DESCRIPTIONS = ["Grain", "Sugar", "Extract", "Dry Extract", "Adjunct"]
 
   belongs_to :user
@@ -46,8 +48,6 @@ class Fermentable < ActiveRecord::Base
     :protein, :ibu, :color, allow_nil: true
 
   validates_presence_of :user, unless: :master?
-
-  scope :masters, -> { where(master: true) }
 
   def self.countries
     Fermentable.select("DISTINCT(origin)").where("origin IS NOT NULL").collect { |f| f.origin }.sort

@@ -29,6 +29,8 @@
 
 class Hop < ActiveRecord::Base
 
+  include Masterable
+
   FORMS        = %w(Pellet Whole)
   DESCRIPTIONS = %w(Both Bittering Aroma)
 
@@ -45,8 +47,6 @@ class Hop < ActiveRecord::Base
     :caryophyllene, :farnese, allow_nil: true
 
   validates_presence_of :user, unless: :master?
-
-  scope :masters, -> { where(master: true) }
 
   def self.countries
     Hop.select("DISTINCT(origin)").where("origin IS NOT NULL").collect { |h| h.origin }.sort
